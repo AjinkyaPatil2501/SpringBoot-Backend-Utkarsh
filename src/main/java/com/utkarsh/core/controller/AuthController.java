@@ -40,7 +40,8 @@ public class AuthController {
 
         Cookie cookie = new Cookie("authToken", token);
         cookie.setHttpOnly(true);
-        cookie.setSecure(false);
+//        cookie.setSecure(false);
+        cookie.setSecure(true);
         cookie.setPath("/");
         cookie.setMaxAge(24 * 60 * 60);
         response.addCookie(cookie);
@@ -72,7 +73,8 @@ public class AuthController {
                                         HttpServletRequest request) {
         Cookie cookie = new Cookie("authToken", null);
         cookie.setHttpOnly(true);
-        cookie.setSecure(false);
+//        cookie.setSecure(false);
+        cookie.setSecure(true);
         cookie.setPath("/");
         cookie.setMaxAge(0);
         response.addCookie(cookie);

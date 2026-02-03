@@ -46,7 +46,7 @@ public class DepositMasterMapper {
 
 		entity.setIntrName(dto.getIntroducerName());
 		entity.setIntrAdd1(dto.getIntroducerAddress());
-		entity.setIntrCityc(dto.getIntroducerCity());
+		entity.setIntrCityc(null);
 		entity.setIntrCityn(dto.getIntroducerCity());
 
 		entity.setCprocRec1(dto.getIncludeInRecovery());
